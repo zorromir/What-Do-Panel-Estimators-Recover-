@@ -30,7 +30,7 @@ The second experiment adds a lagged outcome and looks at the estimated persisten
 
 - [Paper (PDF)](paper/What_Do_Panel_Estimators_Recover.pdf) — the short research note, including tables and figures.
 - [LaTeX source](paper/Panel_Estimators_Refined.tex) — editable source for the note.
-- [Python simulation](code/panel_monte_carlo_minimal.py) — generates the simulated data, estimates coefficients, and saves two figures.
+- [Python simulation](code/panel_monte_carlo.py) — generates the simulated data, estimates coefficients, and saves two figures.
 
 ## Scope and background
 
