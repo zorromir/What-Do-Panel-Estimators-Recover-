@@ -18,7 +18,7 @@ u_{it} &= u_{i,t-1}+e_{it}.
 \end{aligned}
 ```
 
-Here, the individual effect $\alpha_i$ is correlated with the regressor $x_{it}$, while the error $u_{it}$ follows a random walk. The true slope is **2**. The baseline simulation uses **200 individuals**, **5 periods**, and **1,000 repetitions**.
+Here, the individual effect $\alpha_i$ is correlated with the regressor $x_{it}$, while the error $u_{it}$ follows a random walk. The true slope is 2. The baseline simulation uses 200 individuals, 5 periods, and 1,000 repetitions.
 
 - **Pooled OLS** ignores the individual effect and is biased in this setup.
 - **Fixed effects** removes the time-invariant individual effect.
