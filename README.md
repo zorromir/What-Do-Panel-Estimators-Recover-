@@ -8,15 +8,17 @@ I generate artificial panel data and compare pooled OLS, fixed effects (FE), and
 
 ## The experiment
 
-For individual \(i\) in period \(t\), the main data-generating process is
+For individual $i$ in period $t$, the main data-generating process is
 
-\[
-y_{it}=1+\alpha_i+2x_{it}+u_{it},\qquad
-x_{it}=v_{it}+0.5\alpha_i,\qquad
-u_{it}=u_{i,t-1}+e_{it}.
-\]
+$
+\begin{aligned}
+y_{it} &= 1+\alpha_i+2x_{it}+u_{it},\\
+x_{it} &= v_{it}+0.5\alpha_i,\\
+u_{it} &= u_{i,t-1}+e_{it}.
+\end{aligned}
+$
 
-Here, the individual effect \(\alpha_i\) is correlated with the regressor \(x_{it}\), while the error \(u_{it}\) follows a random walk. The true slope is **2**. The baseline simulation uses **200 individuals**, **5 periods**, and **1,000 repetitions**.
+Here, the individual effect $\alpha_i$ is correlated with the regressor $x_{it}$, while the error $u_{it}$ follows a random walk. The true slope is **2**. The baseline simulation uses **200 individuals**, **5 periods**, and **1,000 repetitions**.
 
 - **Pooled OLS** ignores the individual effect and is biased in this setup.
 - **Fixed effects** removes the time-invariant individual effect.
