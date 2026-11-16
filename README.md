@@ -30,19 +30,6 @@ The second experiment adds a lagged outcome and looks at the estimated persisten
 - [LaTeX source](paper/Panel_Estimators_Refined.tex) — editable source for the note.
 - [Python simulation](code/panel_monte_carlo_minimal.py) — generates the simulated data, estimates coefficients, and saves two figures.
 
-## Reproduce the simulations
-
-Requires Python 3.10+.
-
-```bash
-python -m pip install -r requirements.txt
-python code/panel_monte_carlo_minimal.py
-```
-
-The script prints Monte Carlo summaries and writes `panel_estimates.png` and `panel_dynamic.png` inside the `code/` directory. The fixed random seed makes the runs reproducible.
-
-To rebuild the paper from the LaTeX source, run the simulation first and place the generated PNG files alongside the `.tex` source, then compile with a LaTeX distribution such as TeX Live.
-
 ## Scope and background
 
 This is a small learning exercise, not an empirical study with observed data. In particular, the dynamic-panel results use random-walk disturbances rather than the conventional serially uncorrelated errors often used to introduce dynamic fixed-effects bias.
